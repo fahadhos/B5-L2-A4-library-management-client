@@ -17,13 +17,13 @@ const { data, isLoading } = useGetBookQuery(id);
 
 // console.log("data", data);
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen">
-            <h1 className="p-4 pb-2 text-xl font-extrabold opacity-90 tracking-wide">Details of Book </h1>
-           <ul className="list bg-base-100 lg:text-3xl rounded-box shadow-md">
+        <div className="flex flex-col items-center justify-center min-h-screen ">
+            <h1 className=" pb-2 text-xl font-extrabold opacity-90 tracking-wide">Details of Book </h1>
+           <ul className="list bg-base-100 lg:text-4xl rounded-box shadow-md">
   
-  <li className="p-4 pb-2 text-xl font-extrabold opacity-90 tracking-wide"> Book Name: {data?.data?.title}</li>
+  <li className=" pb-2 text-xl font-extrabold opacity-90 tracking-wide"> Book Name: {data?.data?.title}</li>
   
-  <li className="list-row">
+  <li className="list-row lg:text-2xl">
     <div> <BiDetail></BiDetail></div>
     <div className="space-y-3">
       <div className="text-xs font-semibold">Author:  {data?.data.author}</div>

@@ -82,6 +82,10 @@ if(isLoading){
     return <div className='text-center text-2xl font-bold'><Loading></Loading>  </div>
 
 }
+if (!data || !data.data) {
+ return <div className='text-center text-2xl font-bold'><Loading></Loading>  </div>
+
+}
 
 return (
         <>    

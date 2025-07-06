@@ -90,7 +90,7 @@ useEffect(()=>{
 />
 {errors.available && <span className='text-red-600'>Set Status is required</span>}
 </fieldset>
-<input className="btn text-white font-bold flex justify-center bg-[#636AE8]" type="submit" value={isLoading?"Submitting": "Submit"} />
+<input className="btn my-4 items-center  mx-auto text-white font-bold flex justify-center bg-[#636AE8]" type="submit" value={isLoading?"Submitting": "Submit"} />
 </form>
  
         </div>

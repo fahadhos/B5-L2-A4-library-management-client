@@ -3,10 +3,11 @@ import { createApi,fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 export const baseApi = createApi({
     reducerPath: "baseApi",
-    baseQuery: fetchBaseQuery({baseUrl:  import.meta.env.MODE === "development"
-        ? "http://localhost:5000/api"
-        : "https://library-management-app-with-mongoos.vercel.app/api",
-}),
+//     baseQuery: fetchBaseQuery({baseUrl:  import.meta.env.MODE === "development"
+//         ? "http://localhost:5000/api"
+//         : "https://library-management-app-with-mongoos.vercel.app/api",
+// }),
+    baseQuery: fetchBaseQuery({baseUrl:   "https://library-management-app-with-mongoos.vercel.app/api",}),
    tagTypes:["books"],
     endpoints:(builder)=>({
    

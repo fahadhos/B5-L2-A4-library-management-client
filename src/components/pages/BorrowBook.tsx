@@ -62,7 +62,7 @@ const BorrowBook = () => {
       <input type="datetime-local"{...register("dueDate", {required:true})} className="input" placeholder="Select Due Date"/>
  {errors.dueDate && <span className='text-red-600'>Due Date is required</span>}
    </fieldset>
-   <input className="btn bg-[#636AE8]" type="submit" value={isLoading?"borrowing book now": "Borrow this book"} />
+   <input className="btn mx-auto flex my-3 text-white items-center bg-[#636AE8]" type="submit" value={isLoading?"Borrowing book now": "Borrow this book"} />
    </form>
     
            </div>
