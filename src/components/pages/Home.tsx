@@ -105,7 +105,16 @@ return (
 
   <div className="stat">
    <div className="stat-title flex  place-items-center text-sm">Available Copies<LuBookOpenCheck className='justify-end flex ml-10 '/> </div>
-    <div className="stat-value text-2xl">{ (data?.data?.map((book:IBook) => book?.copies   || 0)).reduce((acc: number, curr: number) => acc + curr, 0)}  </div>
+
+    <div className="stat-value text-2xl">
+        {
+    data?.data
+      ? data.data.map((book: IBook) => book?.copies || 0)?.reduce((acc: number, curr: number) => acc + curr, 0)
+      : 0
+  }
+      {/* { (data?.data?.map((book:IBook) => book?.copies   || 0)).reduce((acc: number, curr: number) => acc + curr, 0)}  */}
+      
+      </div> 
     <div className="stat-desc">Copies ready for borrowing</div>
    </div>
 </div>
