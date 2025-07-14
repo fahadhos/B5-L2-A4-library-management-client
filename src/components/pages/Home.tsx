@@ -180,23 +180,27 @@ return (
 
 
        <div className='tool-tip tooltip tooltip-bottom' data-tip="delete">
-      <button onClick={()=> handleDelete(book._id)} className='btn '><RiDeleteBin2Line  /></button>
+      
+       <button onClick={()=> handleDelete(book._id)} className='btn '> <RiDeleteBin2Line  /> </button>
      </div>
-       <div className='tool-tip tooltip tooltip-bottom' data-tip="details of book">
+     
+  
     <Link to={`/books/${book?._id}`}>
+       <div className='tool-tip tooltip tooltip-bottom' data-tip="details of book">
          <button  className='btn '><LuBookOpenCheck  />
     
             </button>
-           </Link>
+         
      </div>
+       </Link>
+     <Link to={`/borrow/${book?._id}`}>
        <div className='tool-tip tooltip tooltip-bottom' data-tip="Borrow this book">
-    <Link to={`/borrow/${book?._id}`}>
-         <button  className='btn '><BiSolidBookReader />
+        <button  className='btn '><BiSolidBookReader />
     
             </button>
-           </Link>
+          
      </div>
-     
+      </Link>
      </td>
       </tr>
 
