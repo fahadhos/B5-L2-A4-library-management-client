@@ -3,7 +3,7 @@ import logo from '../../assets/image.png';
 const Footer = () => {
     return (
         <>
-          <footer className="footer    sm:footer-horizontal bg-[#F7F7F7]  text-black-content 
+          <footer className="footer  text-black  sm:footer-horizontal bg-[#F7F7F7]  text-black-content 
           items-center p-4    z-5 shadow-md">
   <aside className="grid-flow-col items-center">
    <img className="w-20 fill-current" src={logo} alt="logo"  />
